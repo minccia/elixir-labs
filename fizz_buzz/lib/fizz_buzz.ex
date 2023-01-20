@@ -17,7 +17,7 @@ defmodule FizzBuzz do
   end
 
   defp handle_file({:ok, result}), do: {:ok, parse_list(result)}
-  defp handle_file({:error, message}), do: {:error, "Deu ruim: #{message}"}
+  defp handle_file({:error, message}), do: {:error, "Error reading the file: #{message}"}
 
   def build(file_path) do
     file_path
