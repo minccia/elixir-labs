@@ -1,5 +1,7 @@
 defmodule FizzBuzz do
-  defp fizz_buzz(num) when (rem(num, 3) == 0) and (rem(num, 5) == 0), do: "FizzBuzz"
+  defp fizz_buzz(num) when (rem(num, 3) == 0) and (rem(num, 5) == 0),
+    do: "FizzBuzz"
+
   defp fizz_buzz(num) when (rem(num, 3) == 0), do: "Fizz"
   defp fizz_buzz(num) when (rem(num, 5) == 0), do: "Buzz"
   defp fizz_buzz(num), do: num
